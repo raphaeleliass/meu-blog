@@ -15,17 +15,17 @@ export default function Logo() {
     }
   }, [resolvedTheme]);
   return (
-    <div>
+    <>
       {logo && (
         <Image
           src={logo}
           alt="logo do blog"
           fill
           quality={100}
-          priority={false}
+          priority
           sizes="(max-width: 768px) 100vw, 33vw"
         />
       )}
-    </div>
+    </>
   );
 }

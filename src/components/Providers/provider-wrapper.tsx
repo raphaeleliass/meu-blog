@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { ThemeProvider } from "./theme-provider";
+import { Toaster } from "sonner";
 
 export default function ProviderWrapper({
   children,
@@ -11,6 +12,7 @@ export default function ProviderWrapper({
       enableSystem
       disableTransitionOnChange
     >
+      <Toaster richColors />
       {children}
     </ThemeProvider>
   );
